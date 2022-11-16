@@ -5,3 +5,5 @@ obj
 appsettings.json
 *.db
 wwwroot
+Properties/launchSettings.json
+appsettings.Development.json

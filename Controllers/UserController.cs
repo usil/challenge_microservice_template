@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 namespace TestApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("v1/user")]
     public class UserController : ControllerBase
     {
         private readonly IConfiguration _configuration;
@@ -24,15 +24,15 @@ namespace TestApi.Controllers
         {
             _configuration = configuration;
             _logger = logger;
-            var host = _configuration["DBHOST"] ?? "localhost";
-            var port = _configuration["DBPORT"] ?? "3306";
-            var password = _configuration["MYSQL_PASSWORD"] ?? _configuration.GetConnectionString("MYSQL_PASSWORD");
-            var userid = _configuration["MYSQL_USER"] ?? _configuration.GetConnectionString("MYSQL_USER");
-            var usersDataBase = _configuration["MYSQL_DATABASE"] ?? _configuration.GetConnectionString("MYSQL_DATABASE");
+            var host = _configuration["MYSQL_DBHOST"];
+            var port = _configuration["MYSQL_DBPORT"];
+            var password = _configuration["MYSQL_PASSWORD"];
+            var userid = _configuration["MYSQL_USER"];
+            var usersDataBase = _configuration["MYSQL_DATABASE"];
 
             connString = $"server={host}; userid={userid};pwd={password};port={port};database={usersDataBase}";
         }
-        [HttpGet("GetAllUsers")]
+        [HttpGet]
         public async Task<ActionResult<List<UsersDto>>> GetAllUsers()
         {
             var users = new List<UsersDto>();
@@ -53,13 +53,13 @@ namespace TestApi.Controllers
                     return NotFound();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Unable To Process Request");
+                return StatusCode(500, "Unable To Process Request. Log: "+ex.ToString());
             }
         }
 
-        [HttpPost("AddNewUser")]
+        [HttpPost]
         public async Task<ActionResult<UsersDto>> AddNewUser(UsersDto user)
         {
             var newUser = new UsersDto();
@@ -87,9 +87,9 @@ namespace TestApi.Controllers
                     return BadRequest("Unable To  User");
                 }
             }
-            catch (Exception)
+            catch (Exception ex) 
             {
-                return StatusCode(500, "Unable To Process Request");
+                return StatusCode(500, "Unable To Process Request. Log: "+ex.ToString());
             }
         }
     }
