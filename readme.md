@@ -1,36 +1,9 @@
-# challenge_microservice_template
+# API 1: http://localhost:63391/v1/meta/log
+ 
 
-initial starter with c# + myql
+![image](https://github.com/alxndr24/challenge_microservice_template/assets/49344337/c528b931-790e-468b-8c2f-73f2fe67131f)
+![image](https://github.com/alxndr24/challenge_microservice_template/assets/49344337/6e979460-563c-48e1-ad89-b0bda622d2cc)
 
-# one click run
+# API 2: http://localhost:63391/v1/meta/log/truncate 
 
-```
-docke-compose down
-docke-compose up
-```
-
-# endpoints
-
-**create user**
-
-```
-curl --location --request POST 'http://localhost:5000/v1/user' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "UserName":"Barney",
-    "Hobbies":"Reichert",
-    "Location":"gu"
-}'
-```
-
-**list users**
-
-```
-curl --location --request GET 'http://localhost:5000/v1/user/' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "UserName":"Jonatan",
-    "Hobbies":"Krajcik",
-    "Location":"ast"
-}'
-```
+![image](https://github.com/alxndr24/challenge_microservice_template/assets/49344337/b0bda9f3-2972-4ef4-a52f-94b7f9fe329e)
