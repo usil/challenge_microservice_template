@@ -221,14 +221,10 @@ var assemblies = [
   {
     "name": "TestApi",
     "classes": [
-      { "name": "TestApi.Controllers.MetaController", "rp": "TestApi_MetaController.html", "cl": 16, "ucl": 23, "cal": 39, "tl": 77, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "TestApi.Controllers.UserController", "rp": "TestApi_UserController.html", "cl": 0, "ucl": 54, "cal": 54, "tl": 96, "cb": 0, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "TestApi.Controllers.WeatherForecastController", "rp": "TestApi_WeatherForecastController.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 39, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "TestApi.DTOs.LogDto", "rp": "TestApi_LogDto.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "TestApi.DTOs.UsersDto", "rp": "TestApi_UsersDto.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "TestApi.Controllers.MetaController", "rp": "TestApi_MetaController.html", "cl": 29, "ucl": 10, "cal": 39, "tl": 77, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "TestApi.DTOs.LogDto", "rp": "TestApi_LogDto.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "TestApi.Program", "rp": "TestApi_Program.html", "cl": 0, "ucl": 8, "cal": 8, "tl": 26, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "TestApi.Startup", "rp": "TestApi_Startup.html", "cl": 0, "ucl": 33, "cal": 33, "tl": 58, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "TestApi.WeatherForecast", "rp": "TestApi_WeatherForecast.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];
 

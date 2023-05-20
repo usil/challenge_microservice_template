@@ -127,4 +127,3 @@ C:\Users\Xavier Miranda\Desktop\USIL\challenge_microservice_template\UnitTestPro
 C:\Users\Xavier Miranda\Desktop\USIL\challenge_microservice_template\UnitTestProject\obj\Debug\netcoreapp3.1\UnitTestProject.dll
 C:\Users\Xavier Miranda\Desktop\USIL\challenge_microservice_template\UnitTestProject\obj\Debug\netcoreapp3.1\UnitTestProject.pdb
 C:\Users\Xavier Miranda\Desktop\USIL\challenge_microservice_template\UnitTestProject\obj\Debug\netcoreapp3.1\UnitTestProject.genruntimeconfig.cache
-C:\Users\Xavier Miranda\Desktop\USIL\challenge_microservice_template\UnitTestProject\bin\Debug\netcoreapp3.1\TestApi.StaticWebAssets.xml
