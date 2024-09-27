@@ -1,9 +1,0 @@
-bin
-obj
-.vscode
-.DS_Store
-appsettings.json
-*.db
-wwwroot
-Properties/launchSettings.json
-appsettings.Development.json
